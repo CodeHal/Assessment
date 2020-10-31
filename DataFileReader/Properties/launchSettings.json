@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DataFileReader": {
+      "commandName": "Project",
+      "commandLineArgs": "data.txt Server=(local);Database=Interview;Trusted_Connection=True;"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <div id="messageContainer">
+            <div class="alert alert-danger" style="display:none;" id="selectFileToUpload">
+                Please select a file to upload
+            </div>
+            <div class="alert alert-danger" style="display:none;" id="errorOccurred">
+                An error occurred while processing your file
+            </div>
+            <div class="alert alert-success" style="display:none;" id="success">
+                File successfully processed
+            </div>
+        </div>
+
+        <form onsubmit="submitUpload(this);return false;">
+            <div>
+                <input name="upload" type="file" />
+            </div>
+            <hr />
+            <div>
+                <input type="submit" />
+            </div>
+        </form>
+    </div>
